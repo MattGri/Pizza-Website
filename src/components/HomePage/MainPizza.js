@@ -10,11 +10,19 @@ const DivContainerImage = styled.div`
 
 const DivParent = styled.div`
   margin: 300px 0px 0px 70px;
+  @media (max-width: 900px) {
+    margin: 0 auto;
+  }
 `;
 
 const Title = styled.h1`
   font-size: 60px;
   margin-bottom: 20px;
+
+  @media (max-width: 900px) {
+    text-align: center;
+    font-size: 40px;
+  }
 `;
 
 const SubTitle = styled.h2`
@@ -22,6 +30,11 @@ const SubTitle = styled.h2`
   font-size: 30px;
   margin-bottom: 20px;
   font-weight: 500;
+
+  @media (max-width: 900px) {
+    font-size: 20px;
+    text-align: center;
+  }
 `;
 
 const MainPizza = () => {
