@@ -13,12 +13,21 @@ const DivWrapper = styled.div`
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
+
+  @media (max-width: 1000px) {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
 `;
 
 const DivBox = styled.div`
   margin: 20px;
   border: 1px solid black;
   border-radius: 20px;
+
+  @media (max-width: 1000px) {
+    margin: 20px auto;
+  }
 `;
 
 const PizzaImage = styled.img`
@@ -26,6 +35,11 @@ const PizzaImage = styled.img`
   height: 250px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+
+  @media (max-width: 1000px) {
+    display: block;
+    margin: 0 auto;
+  }
 `;
 
 const DivContainer = styled.div`
@@ -35,10 +49,18 @@ const DivContainer = styled.div`
 
 const PizzaTitle = styled.h2`
   margin-bottom: 10px;
+
+  @media (max-width: 1000px) {
+    text-align: center;
+  }
 `;
 
 const Price = styled.p`
   font-size: 13px;
+
+  @media (max-width: 1000px) {
+    text-align: center;
+  }
 `;
 
 const Menu = () => {
