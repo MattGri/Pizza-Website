@@ -25,6 +25,10 @@ const RightContainer = styled.div`
   display: flex;
   justify-content: flex-end;
   padding-right: 50px;
+
+  @media(max-width: 340px){
+    padding-right: 0px;
+  }
 `;
 
 const NavbarInnerContainer = styled.div`
