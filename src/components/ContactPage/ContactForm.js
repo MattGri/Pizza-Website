@@ -5,6 +5,10 @@ import axios from 'axios';
 const DivWrapper = styled.div`
   display: flex;
   flex-wrap: nowrap;
+
+  @media (max-width: 1000px) {
+    flex-wrap: wrap;
+  }
 `;
 
 const DivBoxImage = styled.div`
@@ -12,23 +16,43 @@ const DivBoxImage = styled.div`
   width: 50%;
   background-size: cover;
   height: 100vh;
+
+  @media (max-width: 1000px) {
+    width: 100%;
+  }
 `;
 
 const DivBoxContactForm = styled.div`
   width: 50%;
+
+  @media (max-width: 1000px) {
+    width: 100%;
+  }
 `;
 
 const DivBox = styled.div`
   margin: 150px 0px 0px 30px;
+
+  @media (max-width: 1000px) {
+    margin: 30px auto;
+  }
 `;
 
 const ContactTitle = styled.h1`
   margin-bottom: 20px;
+
+  @media (max-width: 1000px) {
+    text-align: center;
+  }
 `;
 
 const ContactFormPizza = styled.form`
   display: block;
   margin: 0 auto;
+
+  @media (max-width: 540px) {
+    padding: 0 20px;
+  }
 `;
 
 const DivParent = styled.div`
@@ -37,6 +61,11 @@ const DivParent = styled.div`
 
 const ContactLabel = styled.label`
   color: grey;
+
+  @media (max-width: 1000px) {
+    text-align: center;
+    display: block;
+  }
 `;
 
 const ContactInput = styled.input`
@@ -48,6 +77,15 @@ const ContactInput = styled.input`
   outline: none;
   &::placeholder {
     color: #000;
+  }
+
+  @media (max-width: 1000px) {
+    display: block;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 540px) {
+    width: 100%;
   }
 `;
 
@@ -62,6 +100,11 @@ const SendButton = styled.button`
     transition: 0.5s;
     color: #000;
     background-color: #fff;
+  }
+
+  @media (max-width: 1000px) {
+    display: block;
+    margin: 0 auto;
   }
 `;
 
