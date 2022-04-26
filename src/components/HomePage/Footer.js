@@ -11,11 +11,18 @@ const DivContainer = styled.div`
   padding: 20px 0px;
 `;
 
-const DivParent = styled.div``;
+const DivParent = styled.div`
+  width: 100%;
+`;
 
 const UlItems = styled.ul`
   display: flex;
   justify-content: center;
+  flex-wrap: nowrap;
+
+  @media (max-width: 360px) {
+    flex-wrap: wrap;
+  }
 `;
 
 const InstagramItem = styled(FaInstagram)`
@@ -51,17 +58,46 @@ const Text = styled.p`
   text-align: center;
 `;
 
+const Instagram = styled(InstagramItem)`
+  cursor: pointer;
+`;
+
+const Twitter = styled(TwitterItem)`
+  cursor: pointer;
+`;
+
+const Facebook = styled(FacebookItem)`
+  cursor: pointer;
+`;
+const Linkedin = styled(LinkedinItem)`
+  cursor: pointer;
+`;
+
+const Websites = styled.a`
+  @media (max-width: 360px) {
+    margin: 0 20px;
+  }
+`;
+
 const Footer = () => {
   return (
     <DivContainer>
       <DivParent>
         <UlItems>
-          <InstagramItem />
-          <TwitterItem />
-          <FacebookItem />
-          <LinkedinItem />
+          <Websites target="_blank" href="https://www.instagram.com">
+            <Instagram />
+          </Websites>
+          <Websites target="_blank" href="https://www.twitter.com">
+            <Twitter />
+          </Websites>
+          <Websites target="_blank" href="https://www.facebook.com">
+            <Facebook />
+          </Websites>
+          <Websites target="_blank" href="https://www.Linkedin.com">
+            <Linkedin />
+          </Websites>
         </UlItems>
-        <Text>2021 pizza.com</Text>
+        <Text>2022 pizza.com</Text>
       </DivParent>
     </DivContainer>
   );

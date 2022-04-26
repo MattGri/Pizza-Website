@@ -12,6 +12,7 @@ const DivContainer = styled.div`
 
 const DivWrapper = styled.div`
   margin-left: 150px;
+  width: 50%;
 
   @media (max-width: 900px) {
     width: 100%;
