@@ -2,7 +2,9 @@
 I created a pizza website to practice my react skills.
 
 # Technologies 🔧
-
+* html
+* css
+* javascript
 * REACT (styled components)
 
 # Screenshots 📺
